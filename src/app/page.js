@@ -11,6 +11,17 @@ import BackToTopBtn from './components/BackToTopBtn';
 
 export default function Home() {
   return (
-    <main className=''>main</main>
+    <main className='max-w-[1920px] bg-white mx-auto relative overflow-hidden'>
+      <Header/>
+      <Hero/>
+      <Cars/>
+      <Cars/>
+      <About/>
+      <Why/>
+      <Testimonial/>
+      <Cta/>
+      <Footer/>
+      <BackToTopBtn/>
+    </main>
   )
 }
