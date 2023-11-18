@@ -15,7 +15,6 @@ export default function Home() {
       <Header/>
       <Hero/>
       <Cars/>
-      <Cars/>
       <About/>
       <Why/>
       <Testimonial/>
