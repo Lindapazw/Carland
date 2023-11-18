@@ -15,9 +15,14 @@ import SearchMobile from './SearchMobile';
 import {useMediaQuery} from 'react-responsive';
 
 // icons
-import {BiMenuAltRight, BiX} from 'react-icons/bi'
+import {BiMenuAltRight, BiX} from 'react-icons/bi';
+
+// search context
+import { SearchContext } from '../context/search';
 
 const Header = () => {
+    const {setSearchActive} = useContext(SearchContext);
+
     const [header, setHeader] = useState(false);
     const [nav, setNav] = useState(false);
 
@@ -32,6 +37,13 @@ const Header = () => {
                 setHeader(true)
             } else{
                 setHeader(false)
+            }
+
+            // search
+            if(window.scrollY>800) {
+                setSearchActive(true)
+            } else {
+                setSearchActive(false)
             }
         };
 
