@@ -21,10 +21,20 @@ const Search = () => {
                 } w-full relative shadow-lg`}
             >
             {/* Contenido del componente */}
-            <div className="xl:h-full flex items-center px-6 xl:px-0">
+            <div className={` flex h-full ${searchActive && 'container mx-auto'}`}>
                 <LocationSelection/>
                 <DateSelection />
                 <HoursSelection />
+                {/* btn */}
+                <div className="xl:h-full flex items-center px-6 xl:px-0">
+                    <button className={`${
+                        searchActive
+                        ? 'btn btn-sm btn-accent xl:w-[164px]' 
+                        : 'btn btn-lg btn-accent xl:w-[184px]'}`
+                        }> 
+                            Search 
+                        </button>
+                </div>
             </div>
         </div>
     )
