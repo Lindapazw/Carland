@@ -6,6 +6,7 @@ import { SearchContext } from "../context/search";
 
 // Components
 import LocationSelection from "./LocationSelection";
+import DateSelection from "./DateSelection";
 
 const Search = () => {
     const {searchActive} = useContext(SearchContext);      
@@ -21,6 +22,7 @@ const Search = () => {
             {/* Contenido del componente */}
             <div className="xl:h-full flex items-center px-6 xl:px-0">
                 <LocationSelection/>
+                <DateSelection />
             </div>
         </div>
     )
