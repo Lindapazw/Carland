@@ -40,9 +40,9 @@ const DateSelection = () => {
                 </div>
             </div>
             <div className="flex items-center gap-x-3 xl:ml-6">
-              <div>{format(date[0].startDate, 'dd/MM/yyy')}</div>
+              <div className="text-[13px] font-medium text-secondary">{format(date[0].startDate, 'dd/MM/yyy')}</div>
               <FaArrowRightLong className="text-accent-DEFAULD text-[12px]"/>
-              <div>
+              <div className="text-[13px] font-medium text-secondary">
                 {date[0].endDate? (
                   <div>{format(date[0].endDate, 'dd/MM/yyyy')}</div>
                 ):(
