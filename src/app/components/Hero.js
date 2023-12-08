@@ -17,7 +17,7 @@ const Hero = () => {
 
     return (
         <section className="h-screen xl:h-[90vh] bg-[#b2b7c2]/10" id="home">
-            <div className="container mx-auto h-full xl:pt-10">
+            <div className="pt-20 container mx-auto h-full xl:pt-10">
                 {/* text & img wrapper */}
                 <div className="flex flex-col xl:flex-row justify-center items-center xl:justify-start h-full">
                     {/* text */}
@@ -32,7 +32,7 @@ const Hero = () => {
                         <div className="flex gap-x-3 justify-center xl:justify-start">
                             {/* btn appstore */}
                             <button className="btn-cta">
-                                <Image src={'/icons/buttons/app-store.svg'} width={132} height={36} alt="google play"/>
+                                <Image src={'/icons/buttons/app-store.svg'} width={132} height={36} alt="app store"/>
                             </button>
                             {/* btn google */}
                             <button className="btn-cta">
@@ -40,8 +40,10 @@ const Hero = () => {
                             </button>
                         </div>
                     </div>
-                    {/* img */}
-                    <div>img</div>
+                    {/* img car*/}
+                    <div className="relative w-full h-full max-w-[50vh] md:max-w-[70vw] xl:max-w-[860px] xl:max-h-[542px] xl:absolute xl:-right-[100px] min-[1680px]:right-[120px] xl:top-48">
+                        <Image src={'/images/hero/car.svg'} alt="car" fill style={{objectFit:'contain'}} priority/>
+                    </div>
                 </div>
             </div>
             {
