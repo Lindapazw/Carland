@@ -25,7 +25,9 @@ const Hero = () => {
                         <h1 className="h1">
                             Explore the Finest <span className="text-accent-DEFAULD">Global</span> Offers{' '}
                         </h1>
-                        <p>Find your ideal ride for any adventure with our diverse range of affordable and dependable car rentals.</p>
+                        <p className="description max-w-[550px] mx-auto xl:mx-0 mb-6 xl:mb-10"> 
+                            Find your ideal ride for any adventure with our diverse range of affordable and dependable car rentals.
+                        </p>
                         {/* btns */}
                         <div className="flex gap-x-3 justify-center xl:justify-start">
                             {/* btn appstore */}
