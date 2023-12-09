@@ -160,9 +160,9 @@ const CarSlider = () => {
                                 <div>stars</div>
                             </div>
                             {/* car info */}
-                            <div>
+                            <div className='flex gap-x-3 xl:gap-x-4 w-max mb-10'>
                                 {car.info.map((item, index)=> {
-                                    return <div key={index}>
+                                    return <div key={index} className='flex flex-col items-center'>
                                         <div className='bg-primary w-12 h-12 rounded-full flex justify-center items-center'>
                                             <Image 
                                                 src={item.icon} 
@@ -175,6 +175,7 @@ const CarSlider = () => {
                                     </div>
                                 })}
                             </div>
+                            <button className='btn btn-accent btn-lg'>See details</button>
                         </div>
                     </SwiperSlide>
                 })}
