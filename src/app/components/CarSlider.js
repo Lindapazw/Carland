@@ -140,7 +140,46 @@ const cars = [
 
 const CarSlider = () => {
     return (
-        <div>CarSlider</div>
+        <div className='container mx-auto'>
+            <Swiper breakpoints={{
+                320: {slidesPerView:1, spaceBetween:15},
+                640: {slidesPerView:2, spaceBetween:32},
+                1260: {slidesPerView:3, spaceBetween:32},
+            }}>
+                {cars.map((car, index)=>{
+                    return <SwiperSlide key={index}>
+                        <div className='max-w-[385px] mx-auto sm:mx-0 bg-gray-200'>
+                            <Image src={car.image} width={380} height={284} alt='slider'/>
+                            <div>
+                                <div>
+                                    <div>{car.typeof}</div>
+                                    <h3>{car.name}</h3>
+                                    <h3>{car.price}/day</h3>
+                                </div>
+                                {/* stars */}
+                                <div>stars</div>
+                            </div>
+                            {/* car info */}
+                            <div>
+                                {car.info.map((item, index)=> {
+                                    return <div key={index}>
+                                        <div className='bg-primary w-12 h-12 rounded-full flex justify-center items-center'>
+                                            <Image 
+                                                src={item.icon} 
+                                                width={24} 
+                                                height={24} 
+                                                alt='stars'
+                                            />
+                                        </div>
+                                        <div className='text-[12px] uppercase'>{item.text}</div>
+                                    </div>
+                                })}
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                })}
+            </Swiper>
+        </div>
     )
 }
 
