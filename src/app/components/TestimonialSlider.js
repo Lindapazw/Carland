@@ -8,7 +8,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 // import required modules
-import {Pagination} from 'swipper/modules';
+import {Pagination} from 'swiper/modules';
 
 // icons
 import { FaQuoteLeft } from 'react-icons/fa';
