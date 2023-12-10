@@ -40,7 +40,13 @@ const testimonialsData = [
 
 const TestimonialSlider = () => {
     return (
-        <div>
+        <motion.div
+            variants={fadeIn('up', 0.4)}
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{once: false, amount: 0.6}}
+            className='container mx-auto'
+        >
             <Swiper pagination={{
                 clickable:true,
                 dynamicBullets:true,
@@ -65,7 +71,7 @@ const TestimonialSlider = () => {
                     );
                 })}
             </Swiper>
-        </div>
+        </motion.div>
     )
 }
 
