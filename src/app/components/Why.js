@@ -45,7 +45,32 @@ const Why = () => {
                     <Image src={'/images/why/car.svg'} width={1060} height={420} alt='car why us'/>
                 </motion.div>
                 {/* grid items */}
-                <div> grid </div>
+                <motion.div 
+                    variants={fadeIn('up', 0.8)}
+                    initial='hidden'
+                    whileInView={'show'}
+                    viewport={{once: false, amount: 0.4}}
+                    className='flex flex-wrap justify-center xl:grid xl:grid-cols-3 gap-4 xl:gap-y-0 xl:gap-x-[30px]'
+                > 
+                    {/* items 1 */}
+                    <div className='flex flex-col items-center text-center max-w-[160px] xl:max-w-none p-2 xl:p-0'>
+                        <MdKey className='text-[38px] text-accent-DEFAULD mb-4'/>
+                        <h3 className='h3'>Rent simply and quickly</h3>
+                        <p className='hidden xl:flex'>We prioritize your need and we go abode and beyond to ensure your experience with us is nothing short of outstanding.</p>
+                    </div>
+                    {/* items 2 */}
+                    <div className='flex flex-col items-center text-center max-w-[160px] xl:max-w-none p-2 xl:p-0'>
+                        <MdTrendingUp className='text-[38px] text-accent-DEFAULD mb-4'/>
+                        <h3 className='h3'>Modern $ well maintained vehicles</h3>
+                        <p className='hidden xl:flex'>We prioritize your need and we go abode and beyond to ensure your experience with us is nothing short of outstanding.</p>
+                    </div>
+                    {/* items 3 */}
+                    <div className='flex flex-col items-center text-center max-w-[160px] xl:max-w-none p-2 xl:p-0'>
+                        <MdHandshake className='text-[38px] text-accent-DEFAULD mb-4'/>
+                        <h3 className='h3'>Prompt and flexible services</h3>
+                        <p className='hidden xl:flex'>We prioritize your need and we go abode and beyond to ensure your experience with us is nothing short of outstanding.</p>
+                    </div>
+                </motion.div>
             </div>
         </section>
     )
