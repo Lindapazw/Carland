@@ -22,7 +22,21 @@ import {fadeIn} from '/variants';
 // next image
 import Image from 'next/image';
 
-
+// data
+const testimonialsData = [
+    {
+        message: 'They truly exceeded my expectations and made my car rental experience a delight',
+        avatar: '/images/testimonial/avatar.png',
+        name: 'Jane Doe',
+        Job: 'Photographer & Videographer',
+    },
+    {
+        message: 'They truly exceeded my expectations and made my car rental experience a delight',
+        avatar: '/images/testimonial/avatar.png',
+        name: 'Jane Doe',
+        Job: 'Photographer & Videographer',
+    }
+]
 
 const TestimonialSlider = () => {
     return (
