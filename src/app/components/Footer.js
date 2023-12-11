@@ -65,24 +65,35 @@ const Footer = () => {
                         </div>
                     </div>
                     {/* program */}
-                    <div>
-                        <h3>Working Hours</h3>
-                        <div>
+                    <div className='flex-1'>
+                        <h3 className='h3 font-bold mb-8'>Working Hours</h3>
+                        <div className='flex flex-col gap-y-4'>
                             <div className='flex gap-x-2'>
-                                <div>Mon-Fri</div>
-                                <div>09:00AM - 09:00PM</div>
+                                <div className='text-secondary'>Mon-Fri</div>
+                                <div className='font-semibold'>09:00AM - 09:00PM</div>
                             </div>
                             <div className='flex gap-x-2'>
-                                <div>Mon-Fri</div>
-                                <div>09:00AM - 09:00PM</div>
+                                <div className='text-secondary'>MSat:</div>
+                                <div className='font-semibold'>09:00AM - 07:00PM</div>
                             </div>
                             <div className='flex gap-x-2'>
-                                <div>Mon-Fri</div>
-                                <div>09:00AM - 09:00PM</div>
+                                <div className='text-secondary'>Sun:</div>
+                                <div className='font-semibold'>Closed</div>
                             </div>
                         </div>
                     </div>
-                    <div>1</div>
+                    {/* newsletter */}
+                    <div className='flex-1'>
+                        <h3 className='h3 font-bold mb-8'>Newsletter</h3>
+                        <div className='mb-4 text-secondary'>Your dream car awaits let us make it a reality.</div>
+                        {/* form */}
+                        <form className='flex gap-x-2 h-14'>
+                            <input type='text' placeholder='Your email' className='outline-none bg-white h-full border rounded-lg pl-4 focus:border-accent-DEFAULD'/>
+                            <button type='submit' className='btn btn-sm btn-accent w-24'>
+                                Submit
+                            </button>
+                        </form>
+                    </div>
                 </motion.div>
             </div>
         </footer>
