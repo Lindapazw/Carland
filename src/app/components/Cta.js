@@ -54,10 +54,10 @@ const Cta = () => {
                     </div>
                     {/* image */}
                     <motion.div 
-                        variants={fadeIn('up', 0.6)}
+                        variants={fadeIn('left', 0.8)}
                         initial='hidden'
                         whileInView={'show'}
-                        viewport={{once: false, amount: 0.6}}
+                        viewport={{once: false, amount: 0.2}}
                         className='flex-1 flex justify-center order-1 md:order-none'
                     >
                         <Image 
