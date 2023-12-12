@@ -56,7 +56,7 @@ const About = () => {
                                 initial='hidden'
                                 whileInView={'show'}
                                 viewport={{once: false, amount: 0.6}}
-                                className='h2'
+                                className='h2 xl:mt-10 xxl:mt-0'
                             >
                                 Car services simplified
                             </motion.h2>
