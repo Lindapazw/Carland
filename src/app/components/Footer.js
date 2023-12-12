@@ -20,7 +20,7 @@ import {Link} from 'react-scroll';
 
 const Footer = () => {
     return (
-        <footer className='pt-20 bg-white z-20'>
+        <footer className='pt-20 bg-white z-20' id='contact'>
             <div className='container mx-auto mb-24'>
                 {/* grid */}
                 <motion.div 
