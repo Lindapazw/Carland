@@ -31,7 +31,7 @@ const Cta = () => {
                                 initial='hidden'
                                 whileInView={'show'}
                                 viewport={{once: false, amount: 0.6}}
-                                className='mb-10'
+                                className='mb-5'
                             >
                                 Discover the thrill of the open road with our exquisite selection of top-tier automobiles. Whether you're in search of sleek sedans, powerful SUVs, or luxurious sports cars, our showroom boasts an array of options to cater to your discerning taste. 
                             </motion.p>
