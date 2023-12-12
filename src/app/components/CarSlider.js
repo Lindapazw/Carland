@@ -16,7 +16,7 @@ import { FaStar, FaStarHalfAlt, FaRegStar} from 'react-icons/fa';
 import {motion} from 'framer-motion';
 
 // variants
-import {fadeIn} from 'variants';
+import {fadeIn} from '/variants';
 
 // car date
 const cars = [
