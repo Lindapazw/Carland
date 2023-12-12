@@ -70,7 +70,7 @@ const Hero = () => {
                         initial='hidden' 
                         whileInView={'show'} 
                         viewport={{once: false, amount:0.6}} 
-                        className="relative w-full h-full max-w-[50vh] md:max-w-[70vw] xl:max-w-[860px] xl:max-h-[542px] xl:absolute xl:-right-[100px] min-[1680px]:right-[120px] xl:top-48"
+                        className="relative w-full h-full max-w-[50vh] md:max-w-[70vw] xl:max-w-[660px] xl:max-h-[342px] xl:mr-10 xxl:mr-0 xxl:max-w-[860px] xxl:max-h-[542px] xl:absolute xl:-right-[100px] min-[1680px]:right-[120px] xl:top-48"
                     >
                         <Image src={'/images/hero/car.svg'} alt="car" fill style={{objectFit:'contain'}} priority/>
                     </motion.div>
